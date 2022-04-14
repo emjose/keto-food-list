@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta property="og:title" content="Keto Food List" />
+		<meta property="og:image" content="https://keto-food-list.vercel.app/Assets/meta-036-keto.png" />
+		<meta property="og:image:alt" content="A keto food list app. Click to visit website." />
+		<meta property="og:description" content="Project by Emmanuel Jose" />
+		<meta property="og:url" content="https://keto-food-list.vercel.app/" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="keywords" content="HTML, JavaScript, CSS, keto, diet, food, health" />
+		<meta name="author" content="Emmanuel Jose" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Keto Food List</title>
+        <link rel="icon" type="image/png" href="Assets/emmanuel-jose.ico" />
+        <link rel="canonical" href="https://keto-food-list.vercel.app/" />
+		<link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/heg6deq.css">
+	</head>
+	<body>
+		<div class="container" id="keto-app">
+			<div class="tabs">
+				<button class="active" id="tab-top">Keto Food List</button>
+				<button>Fats & Oils</button>
+				<button>Dairy</button>
+				<button>Liquids</button>
+				<button>Protein</button>
+				<button>Organ Meats</button>
+				<button>Herbs & Spices</button>
+				<button>Fish</button>
+				<button>Seafood</button>
+				<button>Nuts & Seeds</button>
+				<button>Vegetables</button>
+				<button>Vegan Protein</button>
+				<button>Fruit & Berries</button>
+				<button>Pantry Items</button>
+				<button id="tab-bottom">Resources</button>
+			</div>
+            
+			<div class="tab-content" tabindex="0">
+                
+                <!-- ********** Keto Food List ********** -->
+
+				<div class="active">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649212370/Keto/header-keto_dj17kh.webp" alt="Keto Food List">
+                    <hr>
+                    <!-- Bullet 1 -->
+                    <h4 class="full-text">• The <span>ketogenic diet</span> is a high-fat, low-carb diet.</h4>
+                    <h4 class="shorter-text">• The <span>keto diet</span> is a high-fat, low-carb diet.</h4>
+                    <h4 class="shortest-text">• <span>Keto diet</span>: high-fat, low-carb.</h4>
+                    <!-- Bullet 2 -->
+                    <h4 class="full-text">• In ketosis, the body uses fat as energy instead of carbs.</h4>
+                    <h4 class="shorter-text">• In ketosis, the body uses fat as energy.</h4>
+                    <h4 class="shortest-text">• Ketosis: using fat as energy.</h4>
+                    <!-- Bullet 3 -->
+                    <h4 class="full-text">• To trigger ketosis, the daily carb limit is 20 to 50 grams.</h4>
+                    <h4 class="shorter-text">• Carb intake: limited to 20 - 50 grams a day.</h4>
+                    <h4 class="shortest-text">• Daily carb limit: 20 - 50 grams.</h4>
+                    <!-- Bullet 4 -->
+                    <h4 class="full-text">• See left menu for food that can be eaten on the keto diet.</h4>
+                    <h4 class="shorter-text">• Navigate left menu for keto-friendly food.</h4>
+                    <h4 class="shortest-text">• See lists of keto-friendly food.</h4>
+                    <!-- Bullet 5 -->
+                    <h4 class="full-text">• Consult your physician before starting any diet program.</h4>
+                    <h4 class="shorter-text">• Consult your physician when starting a diet.</h4>
+                    <h4 class="shortest-text">• Always consult your physician.</h4>
+                    <br>
+                    <h4 class="full-text"><span>Click below for a printable PDF of the Keto Food List.</span></h4>
+                    <h4 class="shorter-text"><span>Click below for a printable PDF.</span></h4>
+                    <h4 class="shortest-text"><span>Click below for printable PDF.</span></h4>
+                    <hr id="pdf-bar">
+                    <a href="Documents/Keto-Food-List.pdf" target="_blank" rel="noreferrer"><img title="Keto Food List PDF" id="pdf-preview" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649213499/Keto/chart-thumbnail_w19yje.webp" alt="Click to view or download Keto Food List PDF document."></a>
+                    <a class="pdf-download" href="Documents/Keto-Food-List.pdf" target="_blank" rel="noreferrer" title="View or Download">PDF</a>
+                    <p id="buffer">&nbsp;</p>
+				</div>
+        
+                <!-- ********** Fats & Oils ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649212370/Keto/header-fats-and-oils_xcfxq0.webp" alt="Fats and Oils">
+                    <hr>
+                    <h4 class="full-intro"><span>Good</span>: Saturated fat (animal fat), monounsaturated fats (MUFAs, from certain oils and nuts), and polyunsaturated fats (PUFAs, which include omega-3s from fish). <span>Bad</span>: Hydrogenated oils/trans fat.</h4>
+                    <h4 class="short-intro">Choose sources of natural fat and avoid processed fat.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615583/Keto/crop-fats-and-oils_goajps.webp" alt="Egg illustration">
+					<p>
+						<ul>
+                            <li>Avocado Oil</li>
+                            <li>Cocoa Butter</li>
+                            <li>Coconut Butter</li>
+                            <li>Coconut Oil</li>
+                            <li>Duck Fat</li>
+                            <li>Egg Yolks</li>
+                            <li>Lard</li>
+                            <li>Macadamia Oil</li>
+                            <li>MCT Oil</li>
+                            <li>Olive Oil</li>
+                            <li>Red Palm Oil</li>
+                            <li>Sesame Oil</li>
+                            <li>Tallow</li>
+                            <li>Walnut Oil</li>
+                        </ul>
+					</p>
+				</div>
+                
+                <!-- ********** Dairy ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220476/Keto/header-dairy_e2gspu.webp" alt="Dairy">
+                    <hr>
+                    <h4 class="full-intro">Most dairy foods are great for keto, but avoid products with added sugars and sweeteners, which can add a whopping 40 grams of carbs. Opt for full-fat, organic, unflavored, and raw, if possible.</h4>
+                    <h4 class="short-intro">Most dairy is great, but avoid dairy with added sugars.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615583/Keto/crop-dairy_ortaiv.webp" alt="Cheese illustration">
+					<p>
+                        <ul>
+                            <li>Blue cheese</li>
+                            <li>Brie cheese</li>
+                            <li>Butter</li>
+                            <li>Cheddar Cheese</li>
+                            <li>Cottage Cheese (plain, full-fat)</li>
+                            <li>Cream Cheese</li>
+                            <li>Feta Cheese</li>
+                            <li>Ghee</li>
+                            <li>Gouda</li>
+                            <li>Goat Cheese</li>
+                            <li>Half and Half</li>
+                            <li>Heavy Cream</li>
+                            <li>Mozzarella Cheese</li>
+                            <li>Muenster Cheese</li>
+                            <li>Parmesan Cheese</li>
+                            <li>Sour Cream (organic)</li>
+                            <li>Whole Cream</li>
+                        </ul>
+                    </p>
+				</div>
+                
+                <!-- ********** Liquids ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220510/Keto/header-liquids_qrug36.webp" alt="Liquids">
+                    <hr>
+                    <h4 class="full-intro">Hydration is key for the keto diet since water loss occurs during ketosis. Water and tea are excellent for hydration, but any high-carb, alcoholic, or sugary drinks should be avoided.</h4>
+                    <h4 class="short-intro">Drink plenty of water and non-sugary drinks to prevent dehydration.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615583/Keto/crop-liquids_uv11am.webp" alt="Tea cup illustration">
+					<p>
+                        <ul>
+                            <li>Almond Milk</li>
+                            <li>Broth (chicken, beef, bone)</li>
+                            <li>Club Soda</li>
+                            <li>Coconut Milk</li>
+                            <li>Coffee, unsweetened</li>
+                            <li>Herbal Teas</li>
+                            <li>Kombucha (watch net carbs)</li>
+                            <li>Lemon Juice (small amount)</li>
+                            <li>Lime Juice (small amount)</li>
+                            <li>Seltzer Water</li>
+                            <li>Sparkling Mineral Water</li>
+                            <li>Tea, unsweetened</li>
+                            <li>Water</li>
+                        </ul>
+                    </p>
+				</div>
+                
+                <!-- ********** Protein ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220510/Keto/header-protein_shs67c.webp" alt="Protein">
+                    <hr>
+                    <h4 class="full-intro">Protein is vital. Choose grass-fed, organic, pasture-raised, and fattier sources wherever possible. Avoid processed or cured meats due to their additives and artificial ingredients.</h4>
+                    <h4 class="short-intro">Choose the highest-quality protein that you can afford.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615585/Keto/crop-protein_o0fxbd.webp" alt="Steak illustration">
+					<p>
+                        <ul>
+                            <li>Bacon</li>
+                            <li>Beef</li>
+                            <li>Beef Jerky</li>
+                            <li>Bison</li>
+                            <li>Chicken</li>
+                            <li>Deer</li>
+                            <li>Duck</li>
+                            <li>Eggs</li>
+                            <li>Elk</li>
+                            <li>Goat</li>
+                            <li>Goose</li>
+                            <li>Hot Dogs (organic/grass-fed)</li>
+                            <li>Lamb</li>
+                            <li>Moose</li>
+                            <li>Pepperoni</li>
+                            <li>Pheasant</li>
+                            <li>Pork</li>
+                            <li>Pork Rinds</li>
+                            <li>Quail</li>
+                            <li>Rabbit</li>
+                            <li>Salami</li>
+                            <li>Sausage</li>
+                            <li>Sheep</li>
+                            <li>Turkey</li>
+                            <li>Veal</li>
+                            <li>Wild Boar</li>
+                            <li>Wild Turkey</li>
+                        </ul>
+                    </p>
+				</div>
+                
+                <!-- ********** Organ Meats ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220509/Keto/header-organ-meats_n4kqgm.webp" alt="Organ Meats">
+                    <hr>
+                    <h4 class="full-intro">Organ meats (also known as offal, variety meats) are incredibly nutrient-dense. Organ meats aren't common in Western diets, but they deliver powerful antioxidants to the body.</h4>
+                    <h4 class="short-intro">Organ meats are incredibly nutrient-dense, especially liver.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615584/Keto/crop-organ-meats_mpujhd.webp" alt="Bone marrow dish illustration">
+					<p>
+                        <ul>
+                            <li>Bone Marrow</li>
+                            <li>Heart</li>
+                            <li>Kidney</li>
+                            <li>Liver</li>
+                            <li>Tongue</li>
+                            <li>Tripe</li>
+                        </ul>
+                    </p>
+				</div>
+                
+                <!-- ********** Herbs & Spices ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220503/Keto/header-herbs-and-spices_tko4h3.webp" alt="Herbs and Spices">
+                    <hr>
+                    <h4 class="full-intro">Many herbs and spices are keto-friendly. They're ideal over most dressings, sauces, and condiments, which contain sugar. Read labels for mixed spice blends, which may have carb fillers.</h4>
+                    <h4 class="short-intro">Choose herbs and spices over dressing, sauces, and condiments.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615583/Keto/crop-herbs-and-spices_ydhzyu.webp" alt="Seasoning shaker illustration">
+					<p>
+                        <ul>
+                            <li>Allspice</li>
+                            <li>Basil</li>
+                            <li>Cardamom</li>
+                            <li>Cayenne Pepper</li>
+                            <li>Chili Powder</li>
+                            <li>Cilantro/Coriander</li>
+                            <li>Cinnamon</li>
+                            <li>Cloves</li>
+                            <li>Cumin</li>
+                            <li>Curry Powder</li>
+                            <li>Dill</li>
+                            <li>Ginger</li>
+                            <li>Italian Seasoning</li>
+                            <li>Nutmeg</li>
+                            <li>Oregano</li>
+                            <li>Paprika</li>
+                            <li>Parsley</li>
+                            <li>Rosemary</li>
+                            <li>Sage</li>
+                            <li>Salt and Pepper</li>
+                            <li>Thyme</li>
+                            <li>Turmeric</li>
+                        </ul>
+                    </p>
+				</div>
+                
+                <!-- ********** Fish ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220503/Keto/header-fish_sj2u6u.webp" alt="Fish">
+                    <hr>
+                    <h4 class="full-intro">Fish are excellent sources of omega-3 fatty acids. Fish should be eaten at least twice a week, but if that isn't possible, fish oil and krill oil supplements are great alternatives.</h4>
+                    <h4 class="short-intro">Eat fish at least twice a week, or take a fish oil supplement.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615583/Keto/crop-fish_rk7qcu.webp" alt="Fish illustration">
+					<p>
+                        <ul>
+                            <li>Anchovies</li>
+                            <li>Bass</li>
+                            <li>Cod</li>
+                            <li>Eel</li>
+                            <li>Flounder</li>
+                            <li>Grouper</li>
+                            <li>Haddock</li>
+                            <li>Halibut</li>
+                            <li>Herring</li>
+                            <li>Mackerel</li>
+                            <li>Mahi-Mahi</li>
+                            <li>Orange Roughy</li>
+                            <li>Perch</li>
+                            <li>Red Snapper</li>
+                            <li>Rockfish</li>
+                            <li>Salmon</li>
+                            <li>Sardines</li>
+                            <li>Sole</li>
+                            <li>Tilapia</li>
+                            <li>Trout</li>
+                            <li>Tuna (including Albacore)</li>
+                            <li>Turbot</li>
+                        </ul>
+                    </p>
+				</div>
+                
+                <!-- ********** Seafood ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220510/Keto/header-seafood_baj6q8.webp" alt="Seafood">
+                    <hr>
+                    <h4 class="full-intro">Like fish, most seafood and shellfish are keto-friendly. Shellfish are nutrient-dense and are important sources of omega-3 fatty acids and trace minerals that are commonly deficient in diets.</h4>
+                    <h4 class="short-intro">Consume more shellfish to avoid trace mineral deficiencies.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615584/Keto/crop-seafood_vxwtes.webp" alt="Shrimp illustration">
+					<p>
+                        <ul>
+                            <li>Abalone</li>
+                            <li>Caviar</li>
+                            <li>Clams</li>
+                            <li>Crab</li>
+                            <li>Lobster</li>
+                            <li>Mussels</li>
+                            <li>Octopus</li>
+                            <li>Oysters</li>
+                            <li>Scallops</li>
+                            <li>Shrimp</li>
+                            <li>Squid</li>
+                        </ul>
+                    </p>
+				</div>
+                
+                <!-- ********** Nuts & Seeds ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220509/Keto/header-nuts-and-seeds_vsjmks.webp" alt="Nuts and seeds">
+                    <hr>
+                    <h4 class="full-intro">Most nuts and seeds are excellent sources of healthy fats and minerals. They're perfect for snacking, but be mindful of over-indulging. Legumes (which include peanuts), should be limited.</h4>
+                    <h4 class="short-intro">Nuts and seeds make great snacks, but don't over-indulge.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615584/Keto/crop-nuts-and-seeds_mrzozq.webp" alt="Nuts illustration">
+					<p>
+                        <ul>
+                            <li>Almonds</li>
+                            <li>Brazil Nuts</li>
+                            <li>Chia Seeds</li>
+                            <li>Hazelnuts</li>
+                            <li>Hemp Seeds</li>
+                            <li>Macadamia Nuts</li>
+                            <li>Nut Butters (unsweetened)</li>
+                            <li>Peanuts</li>
+                            <li>Pecans</li>
+                            <li>Pine Nuts</li>
+                            <li>Pistachios</li>
+                            <li>Pumpkin Seeds</li>
+                            <li>Seed Butters (unsweetened)</li>
+                            <li>Sesame Seeds</li>
+                            <li>Sunflower Seeds</li>
+                            <li>Tahini (sesame butter)</li>
+                            <li>Walnuts</li>
+                        </ul>
+                    </p>
+				</div>
+                
+				<!-- ********** Vegetables ********** -->
+                
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220510/Keto/header-vegetables_lrj11u.webp" alt="Vegetables">
+                    <hr>
+                    <h4 class="full-intro">Leafy greens and most vegetables that grow above ground are low in carbs and excellent for keto. Starchy vegetables like corn, parsnips, and potatoes are high in carbs and should be avoided.</h4>
+                    <h4 class="short-intro">Choose vegetables that grow above ground. Avoid starchy vegetables.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615584/Keto/crop-vegetables_cjlxip.webp" alt="Cucumber illustration">
+					<p>
+                        <ul>
+                            <li>Artichoke</li>
+                            <li>Arugula</li>
+                            <li>Asparagus</li>
+                            <li>Bean Sprouts</li>
+                            <li>Beet Greens</li>
+                            <li>Bok Choy</li>
+                            <li>Broccoli</li>
+                            <li>Brussel Sprouts</li>
+                            <li>Butterhead Lettuce</li>
+                            <li>Cabbage</li>
+                            <li>Carrots (small amount)</li>
+                            <li>Cauliflower</li>
+                            <li>Celery</li>
+                            <li>Chard</li>
+                            <li>Chives</li>
+                            <li>Cucumber</li>
+                            <li>Dandelion Greens</li>
+                            <li>Eggplant</li>
+                            <li>Endive</li>
+                            <li>Fennel</li>
+                            <li>Garlic</li>
+                            <li>Green Beans</li>
+                            <li>Jicama</li>
+                            <li>Kale</li>
+                            <li>Kimchi</li>
+                            <li>Kohlrabi</li>
+                            <li>Leafy Greens</li>
+                            <li>Leeks</li>
+                            <li>Microgreens</li>
+                            <li>Mushrooms (all kinds)</li>
+                            <li>Mustard Greens</li>
+                            <li>Okra</li>
+                            <li>Onion</li>
+                            <li>Parsley</li>
+                            <li>Peas (in moderation)</li>
+                            <li>Peppers (all kinds)</li>
+                            <li>Radicchio</li>
+                            <li>Radishes</li>
+                            <li>Rhubarb</li>
+                            <li>Romaine Lettuce</li>
+                            <li>Sauerkraut</li>
+                            <li>Scallions</li>
+                            <li>Seaweed (all sea vegetables)</li>
+                            <li>Shallots</li>
+                            <li>Shirataki Noodles (konjac plant)</li>
+                            <li>Spaghetti squash</li>
+                            <li>Spinach</li>
+                            <li>Swiss Chard</li>
+                            <li>Tomatoes (in moderation)</li>
+                            <li>Turnip Greens</li>
+                            <li>Watercress</li>
+                            <li>Zucchini</li>
+                            <li>Zucchini noodles</li>
+                        </ul>
+                    </p>
+				</div>
+                
+                <!-- ********** Vegan Protein ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220510/Keto/header-vegan-protein_z4xmah.webp" alt="Vegan Protein">
+                    <hr>
+                    <h4 class="full-intro">For plant-based protein, aim for a daily intake of at least 20 to 25 grams of protein. Consider taking an algae oil supplement to avoid omega-3 deficiencies common in plant-based diets.</h4>
+                    <h4 class="short-intro">In addition to protein, consume an omega-3 supplement.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615584/Keto/crop-vegan-protein_cil0j5.webp" alt="Mushroom illustration">
+					<p>
+                        <ul>
+                            <li>Hummus</li>
+                            <li>Mushrooms</li>
+                            <li>Nut Butters</li>
+                            <li>Nutritional Yeast</li>
+                            <li>Protein Powder (pea, hemp, brown rice)</li>
+                            <li>Seed Butters</li>
+                            <li>Seeds (Sunflower, Sesame, Pumpkin)</li>
+                            <li>Spirulina</li>
+                            <li>Sprouted Beans</li>
+                            <li>Tofu/Tempe (organic)</li>
+                        </ul>
+                    </p>
+				</div>
+                
+                <!-- ********** Fruit & Berries ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220503/Keto/header-fruit-and-berries_u4imjv.webp" alt="Fruit and Berries">
+                    <hr>
+                    <h4 class="full-intro">High-carb or starchy fruit like apples or bananas should be avoided. Low-carb fruit like berries can be eaten in small amounts, and some fruit such as avocado and olive can be regularly eaten.</h4>
+                    <h4 class="short-intro">Low-carb fruit can be eaten, as well as berries in small amounts.</h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615583/Keto/crop-fruit-and-berries_fagpv5.webp" alt="Lemon illustration">
+                    <p>
+                        <ul>
+                            <li>Avocado</li>
+                            <li>Blackberries</li>
+                            <li>Black Currant</li>
+                            <li>Blueberries</li>
+                            <li>Chokeberries</li>
+                            <li>Cultivated European Gooseberry</li>
+                            <li>Lemon</li>
+                            <li>Lime</li>
+                            <li>Olive</li>
+                            <li>Pumpkin</li>
+                            <li>Raspberries</li>
+                            <li>Red Currant</li>
+                            <li>Sea-buckthorn</li>
+                            <li>Strawberries</li>
+                            <li>Tart Cherries</li>  
+                        </ul>
+                    </p>
+				</div>
+                
+                <!-- ********** Pantry Items ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220510/Keto/header-pantry-items_r8vuew.webp" alt="Pantry Items">
+                    <hr>
+                    <h4 class="full-intro">For sweeteners, avoid any form of cane sugar. Choose low-carb, low-glycemic options like erythritol or stevia. Consider adding these low-carb and low-sugar food to your pantry.</h4>
+                    <h4 class="short-intro">Choose low-carb and sugar-free products whenever possible.  </h4>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649615584/Keto/crop-pantry-items_cx4tty.webp" alt="Jar illustration">
+					<p>
+                        <ul>
+                            <li>Almond Flour/Meal</li>
+                            <li>Cacao Nibs</li>
+                            <li>Cacao Powder</li>
+                            <li>Coconut Aminos</li>
+                            <li>Coconut Flour</li>
+                            <li>Cod Liver Oil (Fish Oil)</li>
+                            <li>Dark Chocolate (at least 70%)</li>
+                            <li>Erythritol</li>
+                            <li>Fermented Vegetables</li>
+                            <li>Fish Sauce</li>
+                            <li>Gelatin</li>
+                            <li>Gluten-free Tamari Sauce</li>
+                            <li>Himalayan Pink Salt</li>
+                            <li>Hot Sauce (no sugar)</li>
+                            <li>Mayonnaise (made from good oils)</li>
+                            <li>Monk Fruit</li>
+                            <li>Mustard (no sugar)</li>
+                            <li>Pickles (no sugar)</li>
+                            <li>Shredded Coconut</li>
+                            <li>Sriracha</li>
+                            <li>Stevia</li>
+                            <li>Vanilla Extract</li>
+                            <li>Vinegar</li>
+                        </ul>
+                    </p>
+				</div>
+                
+                <!-- ********** Resources ********** -->
+				
+				<div class="list-section">
+                    <img id="header-image" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649220510/Keto/header-resources_fj0qmx.webp" alt="Resources">
+                    <hr>
+                    <img id="pictogram" src="https://res.cloudinary.com/dn1e07eul/image/upload/v1649814681/Keto/crop-resources_ezi9hf.webp" alt="Notepad illustration">
+                    <h4><span>Consult your physician before starting a diet program.</span></h4>
+					<p>
+                        <ul class="resource-link">
+                            <li><a href="Documents/Keto-Food-List.pdf" target="_blank" rel="noreferrer">Keto Food List PDF</a></li>
+                            <li><a href="https://github.com/emjose/keto-food-list/#header" target="_blank" rel="noreferrer">Keto Food List on Github</a></li>
+                            <li><a href="https://www.emmanuel-jose.com/" target="_blank" rel="noreferrer">Keto Food List © Emmanuel Jose</a></li>
+                            <li><a href="https://www.healthline.com/nutrition/ketogenic-diet-101" target="_blank" rel="noreferrer">Ketogenic Diet 101 - Healthline</a></li>
+                            <li><a href="https://www.popsugar.com/fitness/Keto-Food-List-44531162" target="_blank" rel="noreferrer">Keto Food List Guide - Popsugar</a></li>
+                            <li><a href="https://perfectketo.com/full-ketogenic-diet-food-list/" target="_blank" rel="noreferrer">Keto Diet Food List - Perfect Keto</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=bzs_60vTkpU" target="_blank" rel="noreferrer">Ketogenic Diet Food List - Dr. Berg</a></li>
+                            <li><a href="https://www.chowyoulater.com/keto-diet-grocery-list-pdf/" target="_blank" rel="noreferrer">Keto Diet Grocery List - Chow you Later</a></li>
+                            <li><a href="https://www.freepik.com/vectors/background" target="_blank" rel="noreferrer">Background vectors created by freepik - Freepik</a></li>
+                            <li><a href="https://www.freepik.com/vectors/book-draw" target="_blank" rel="noreferrer">Book draw vector created by mamewmy - Freepik</a></li>
+                            <li><a href="https://www.freepik.com/photos/food-collection" target="_blank" rel="noreferrer">Food collection photo created by Vectorium - Freepik</a></li>
+                            <li><a href="https://www.freepik.com/vectors/hand-drawn-food" target="_blank" rel="noreferrer">Hand drawn food vector created by pikisuperstar - Freepik</a></li>
+                            <li><a href="https://www.freepik.com/vectors/halftone-background" target="_blank" rel="noreferrer">Halftone background vector created by Creative_hat - Freepik</a></li>
+                        </ul>
+                    </p>
+				</div>
+			</div>
+		</div>
+        <script src="script.js"></script>
+	</body>
+    <div class="overlay">
+		<a
+			href="https://github.com/emjose/keto-food-list/#header"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="github-corner"
+			aria-label="View source on GitHub"
+            title="View source on GitHub"
+			><svg
+				width="80"
+				height="80"
+				viewBox="0 0 250 250"
+				style="fill: var(--yellow-1); color: var(--white); position: absolute; top: 0; border: 0; right: 0"
+				aria-hidden="true"
+			>
+				<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+				<path
+					d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+					fill="currentColor"
+					style="transform-origin: 130px 106px"
+					class="octo-arm"
+				></path>
+				<path
+					d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+					fill="currentColor"
+					class="octo-body"
+				></path>
+			</svg>
+		</a>
+	</div>
+</html>

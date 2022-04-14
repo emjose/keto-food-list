@@ -1,0 +1,610 @@
+:root {
+	--yellow-1: #ffc937;
+	--yellow-2: #ffe6a2;
+	--orange-1: #ffaf1c;
+	--orange-2: #ff9900b9;
+	--red: #ff0100;
+	--blue-1: blue;
+	--blue-2: #04028f;
+	--blue-3: #010049;
+	--blue-4: #010014;
+	--black: #000;
+	--white: #fff;
+	--font-1: acumin-pro, sans-serif;
+	--font-2: sans-serif;
+	--font-3: "Webly Sleek SemiBold", "Helvetica";
+	--font-4: futura-pt, sans-serif;
+	--lightweight: 300;
+	--default: 400;
+	--bold: 600;
+	--bolder: 700;
+	--small-font: 0.9rem;
+	--smallest-font: 0.8rem;
+	--spacing-1: 0.4px;
+	--spacing-2: 0.6px;
+	--line-1: 1.9;
+	--line-2: 1.5;
+	--underline: 2px solid var(--blue-1);
+	--width-1: min(85ch, 90%);
+	--height-1: max(70ch, 60%);
+	--width-2: min(70ch, 90%);
+	--height-2: min(70ch, 70%);
+	--min-50: min(50ch, 70%);
+	--min-40: min(40ch, 82%);
+	--width-3: min(65ch, 80%);
+	--height-3: max(40ch, 80%);
+	--height-4: max(30ch, 80%);
+	--width-4: min(110ch, 93%);
+	--height-5: max(88ch, 70%);
+	--height-6: max(50ch, 50%);
+	--unit-1: 0.75em;
+	--unit-2: 1.2rem;
+	--all-corners: 8px;
+	--left-corners: 8px 0px 0px 8px;
+	--top-left: 8px 0px 0px 0px;
+	--bottom-left: 0px 0px 0px 8px;
+	--right-corners: 0px 8px 8px 0px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: var(--font-1);
+	font-weight: var(--default);
+	font-style: normal;
+	font-size: 16px;
+	backface-visibility: hidden;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--white);
+	background: url("https://res.cloudinary.com/dn1e07eul/image/upload/v1649191829/Keto/yellow-bg_cxcyov.webp")
+		no-repeat center center/cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+	position: absolute;
+	background-color: var(--white);
+	width: var(--width-1);
+	height: var(--height-1);
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+	border-radius: var(--all-corners);
+}
+
+h3 {
+	font-size: 1.3rem;
+	letter-spacing: var(--spacing-1);
+	margin: 4% 0% 3% 0%;
+	font-family: var(--font-3);
+}
+
+h4 {
+	line-height: var(--line-1);
+	font-size: 1rem;
+	font-family: var(--font-3);
+	font-weight: var(--lightweight);
+	letter-spacing: var(--spacing-1);
+}
+
+.short-intro,
+.shorter-text,
+.shortest-text {
+	display: none;
+}
+
+.tabs {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: var(--yellow-1);
+}
+
+.tabs button {
+	background-color: var(--yellow-1);
+	padding: 0 0.6em;
+	border: none;
+	outline: none;
+	height: 33.33%;
+	display: grid;
+	place-items: center start;
+	font-family: var(--font-4);
+	font-weight: var(--bolder);
+	font-size: 1.25rem;
+	color: var(--black);
+	letter-spacing: var(--spacing-2);
+	text-transform: uppercase;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.tabs button:hover {
+	background: var(--orange-2);
+}
+
+.tabs button:focus,
+.tabs button:active {
+	background-color: var(--yellow-2);
+}
+
+.tab-content {
+	background-color: var(--white);
+	padding: 1% 5%;
+	overflow-y: overlay;
+}
+
+div .tabs {
+	border-radius: var(--left-corners);
+}
+
+#tab-top {
+	border-radius: var(--top-left);
+}
+
+#tab-bottom {
+	border-radius: var(--bottom-left);
+}
+
+.tab-content {
+	border-radius: var(--right-corners);
+}
+
+img {
+	max-width: 100%;
+}
+
+.list-section {
+	position: relative;
+}
+
+.list-section ul,
+#pictogram {
+	position: absolute;
+	margin-top: 1.5%;
+}
+
+ul,
+.list-section ul {
+	margin-left: 1.25em;
+	padding-bottom: 5%;
+	line-height: var(--line-1);
+	letter-spacing: var(--spacing-1);
+	color: var(--black);
+}
+
+#pictogram {
+	right: 0;
+	max-width: 50%;
+}
+
+#header-image,
+#pictogram {
+	-webkit-pointer-select: none;
+	-moz-pointer-select: none;
+	-ms-pointer-select: none;
+	-o-pointer-select: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+span {
+	font-weight: var(--bold);
+	letter-spacing: var(--spacing-2);
+}
+
+.resource-link li a {
+	color: var(--black);
+	text-decoration: none;
+}
+
+.resource-link li a:hover,
+.resource-link li a:focus {
+	color: var(--blue-1);
+	cursor: pointer;
+	outline: none;
+	border-bottom: var(--underline);
+}
+
+hr {
+	background-color: var(--yellow-1);
+	border: 0.5rem solid var(--yellow-1);
+	margin-bottom: 1em;
+}
+
+#pdf-bar {
+	margin: var(--unit-1) 0;
+}
+
+.pdf-download {
+	display: absolute;
+	float: right;
+	margin-top: 10px;
+	padding: 0.35em 1em;
+	background-color: var(--yellow-1);
+	color: var(--black);
+	border-radius: 4px;
+	font-family: var(--font-4);
+	font-weight: var(--bold);
+	font-size: var(--unit-2);
+	letter-spacing: var(--spacing-2);
+	text-decoration: none;
+}
+
+.pdf-download:hover,
+.pdf-download:focus {
+	background-color: var(--orange-1);
+}
+
+.pdf-download:active {
+	transform: scale(0.95);
+}
+
+.pdf-download[title]:focus::after,
+.pdf-download[title]:hover::after {
+	content: attr(title);
+	position: absolute;
+	transform: translate(-110%, -100%);
+	display: block;
+	text-align: center;
+	z-index: 10;
+	width: 200px;
+	font-size: var(--unit-2);
+	font-family: var(--font-1);
+	font-weight: var(--default);
+}
+
+.tab-content div {
+	display: none;
+}
+
+.tab-content .active {
+	display: block;
+}
+
+.tabs .active {
+	background-color: var(--yellow-2);
+}
+
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+	0%,
+	100% {
+		transform: rotate(0);
+	}
+	20%,
+	60% {
+		transform: rotate(-25deg);
+	}
+	40%,
+	80% {
+		transform: rotate(10deg);
+	}
+}
+
+@media (max-width: 500px) {
+	.github-corner:hover .octo-arm {
+		animation: none;
+	}
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.container {
+		width: var(--width-1);
+		height: var(--height-2);
+	}
+
+	h4 {
+		font-size: var(--small-font);
+		font-size: 0.95rem;
+	}
+
+	.tab-content,
+	.tabs button,
+	.pdf-download {
+		font-size: calc(1.05vw + 1.05vh);
+	}
+
+	.resource-link {
+		font-size: var(--smallest-font);
+	}
+
+	hr {
+		border: 0.25rem solid var(--yellow-1);
+		margin-bottom: var(--unit-1);
+	}
+
+	.short-intro,
+	.shorter-text {
+		display: inline-block;
+	}
+
+	.full-intro,
+	.full-text {
+		display: none;
+	}
+
+	#pictogram,
+	.pdf-download[title]:focus::after,
+	.pdf-download[title]:hover::after {
+		display: none;
+	}
+
+	.pdf-download {
+		margin-top: 6px;
+		font-weight: var(--bold);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		width: var(--width-1);
+		height: var(--height-6);
+	}
+
+	h3 {
+		font-size: 1.1rem;
+		margin: 2% 0% 1% 0%;
+	}
+
+	h4 {
+		font-size: var(--small-font);
+	}
+
+	.shortest-text {
+		display: inline-block;
+	}
+
+	.full-text,
+	.shorter-text {
+		display: none;
+	}
+
+	.resource-link {
+		font-size: 0.6rem;
+	}
+
+	.github-corner svg {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.tabs button {
+		font-weight: var(--bold);
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.container {
+		height: var(--min-50);
+	}
+
+	h3 {
+		font-size: 1rem;
+		font-weight: var(--default);
+		margin: 2% 0% 1% 0%;
+	}
+
+	h4 {
+		font-size: 0.8rem;
+	}
+
+	hr {
+		border: 0.15rem solid var(--yellow-1);
+		margin-bottom: 0.5em;
+	}
+
+	.resource-link {
+		font-size: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.container {
+		width: min(70ch, 90%);
+		height: max(35ch, 40%);
+	}
+
+	h4 {
+		font-size: 0.7rem;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	h4 {
+		font-size: 0.6rem;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	h4 {
+		font-size: 0.5rem;
+	}
+
+	.resource-link {
+		font-size: 0.4rem;
+	}
+}
+
+@media screen and (max-width: 250px) {
+	.container {
+		height: var(--min-50);
+	}
+}
+
+@media screen and (orientation: landscape) and (min-height: 850px) and (max-width: 6000px) {
+	.container {
+		width: var(--width-4);
+		height: var(--height-5);
+	}
+
+	.tabs button {
+		font-size: 1.5rem;
+		font-weight: var(--bolder);
+	}
+
+	h4,
+	ul,
+	.list-section ul {
+		font-size: 18px;
+	}
+
+	.short-intro,
+	.shorter-text,
+	.shortest-text {
+		display: none;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-height: 650px) and (max-width: 6000px) {
+	.container {
+		width: var(--width-3);
+		height: var(--height-3);
+	}
+
+	.tabs button {
+		padding: 0 var(--unit-1);
+		font-size: 1rem;
+		font-weight: var(--bold);
+	}
+
+	h3 {
+		font-size: 1.1rem;
+		margin: 2% 0% 1% 0%;
+	}
+
+	h4 {
+		font-size: var(--small-font);
+	}
+
+	.short-intro,
+	.shorter-text {
+		display: inline-block;
+	}
+
+	.shortest-text,
+	.full-intro,
+	.full-text {
+		display: none;
+	}
+
+	.resource-link {
+		font-size: var(--smallest-font);
+	}
+
+	hr {
+		border: 0.3rem solid var(--yellow-1);
+		margin-bottom: var(--unit-1);
+	}
+
+	#pdf-bar {
+		margin: 0.5em 0;
+	}
+
+	.pdf-download {
+		font-size: var(--small-font);
+		margin-bottom: 18%;
+	}
+
+	#pictogram,
+	.pdf-download[title]:focus::after,
+	.pdf-download[title]:hover::after {
+		display: none;
+	}
+
+	#buffer {
+		margin: 3% 0%;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-height: 619px) and (max-width: 620px) {
+	.shortest-text {
+		display: inline-block;
+	}
+
+	.full-text,
+	.shorter-text {
+		display: none;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-height: 440px) and (max-width: 6000px) {
+	.container {
+		width: var(--min-40);
+		height: var(--height-4);
+	}
+
+	.tabs button {
+		padding: 0 var(--unit-1);
+		font-size: 0.7rem;
+	}
+
+	h3 {
+		font-size: 1rem;
+		font-weight: var(--default);
+	}
+
+	h4 {
+		font-size: var(--smallest-font);
+		padding: 1.1% 0%;
+	}
+
+	.shortest-text {
+		display: inline-block;
+	}
+
+	.full-text,
+	.shorter-text {
+		display: none;
+	}
+
+	h4,
+	.tab-content {
+		font-weight: var(--lightweight);
+		font-size: var(--smallest-font);
+		line-height: var(--line-2);
+	}
+
+	hr {
+		border: 0.25rem solid var(--yellow-1);
+		margin-bottom: 0.5em;
+	}
+
+	.resource-link {
+		font-size: 0.5rem;
+	}
+
+	.pdf-download {
+		font-size: var(--smallest-font);
+		margin-right: 3%;
+	}
+
+	#buffer {
+		margin: 5% 0%;
+	}
+}
